@@ -5,61 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Exam</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="home row">
-                <div class="home-logo col-sm-6 col-mg-2 col-lg-2 col-xl-2">
+            <div class="main">
+                <div class="main-logo">
                     <a href="#"><img src="./img/header/Logo.png" alt="logo"></a>
                 </div>
-                <div class="block-nav col-sm-6 col-mg-6 col-lg-6 col-xl-6">
-                    <ul class="menu">
-                        <li class="menu-elem">
-                            <a href="#" class="menu-link">Why Alivio</a> 
+                <nav class="navig">
+                    <ul class="nav_list">
+                        <li class="nav-elem">
+                            <a href="#work" class="nav-link">Why Alivio</a> 
                         </li>
-                        <li class="menu-elem">
-                            <a href="#review" class="menu-link">Our cases</a>
+                        <li class="nav-elem">
+                            <a href="#review" class="nav-link">Our cases</a>
                         </li>
-                        <li class="menu-elem">
-                            <a href="#about" class="menu-link">Our product</a>
+                        <li class="nav-elem">
+                            <a href="#about" class="nav-link">Our product</a>
                         </li>
-                        <li class="menu-elem main-elem--last">
-                            <a href="#footer" class="menu-link">Contact us</a> 
+                        <li class="nav-elem main-elem--last">
+                            <a href="#footer" class="nav-link">Contact us</a> 
                         </li>
                     </ul>   
-                </div>
-                <div class="home-sign col-sm-12 col-mg-4 col-lg-4 col-xl-4">
-                    <ul class="reg">
-                        <li class="reg-link"><a href="#" class="menu-link">Sign in</a></li>
-                        <li class="reg-link"><a href="#" class="button">Start Trial</a></li>
+                </nav>
+                <div class="sign">
+                    <ul class="sign-list">
+                        <li class="sign-link"><a href="#" class="nav-link">Sign in</a></li>
+                        <li class="sign-link"><a href="#" class="button">Start Trial</a></li>
                     </ul>
+                </div>
+                <div class="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
+        <div class="nav-sm">
+            <div class="container">
+                <ul class="nav-sm-list">
+                    <li class="nav-sm-elem">
+                        <a href="#work" class="nav-sm-links" onclick="clickLink(this)">Why Alivio</a>
+                    </li>
+                    <li class="nav-sm-elem">
+                        <a href="#review" class="nav-sm-links" onclick="clickLink(this)">Our cases</a>
+                    </li>
+                    <li class="nav-sm-elem">
+                        <a href="#about" class="nav-sm-links" onclick="clickLink(this)">Our product</a>
+                    </li>
+                    <li class="nav-sm-elem">
+                        <a href="#footer" class="nav-sm-links" onclick="clickLink(this)">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <section class="top-img">
+    <section class="header-img">
         <div class="container">
             <div class="header-pic">
-                <div class="header-pic-title">Be aware, Manage well.</div>
+                <div class="header-pic-title">Be aware, Manage&nbsp;well.</div>
                 <div class="header-pic-text">Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</div>
-                    <a href="#" class="button">Find Your Way</a>
+                <a href="#" class="button">Find Your Way</a>
             </div>
         </div>
     </section>
     <!-- End of the section header -->
-    <section class="work">
+    <section id="work" class="work">
         <div class="container">
-            <div class="process">
-                <div class="steps row">
-                    <div class="descr-intr col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <div class="descr-head">How it works</div>
-                        <div class="descr-title">Understand & Release the stress in 3 steps</div>
+            <div class="work-process">
+                <div class="work-steps row">
+                    <div class="work-intr col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="work-head">How it works</div>
+                        <div class="work-title">Understand&nbsp;&&nbsp;Release the stress in 3 steps</div>
                     </div>
-                    <div class="descr-nar col-sm-12 col-md-5 col-lg-5 col-xl-5 offset-1">
-                        <div class="descr-text">Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.</div>
+                    <div class="work-text col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <div class="works-text">Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.</div>
+                    </div>
+                </div>
+                <div class="work-tips row">
+                    <div class="tip-content col-sm-12 col-md-12 col-lg-4 col-xl-4">    
+                        <div class="tip-head">
+                            <div class="tip-topimg"><img src="./img/work/01.png" alt="Tip number 1"></div>
+                            <div class="tip-title"><h4>Personalize</h4></div>
+                        </div>
+                        <div class="tip-text">Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</div>
+                        <div class="tip-img">
+                            <img src="./img/work/pers.png" alt="Personalization photo" class="tip-bigimg">
+                            <img src="./img/work/screen.png" alt="Personalization photo" class="tip-smallimg">
+                        </div>
+                    </div>
+                    <div class="tip-content tip-content--size col-sm-12 col-md-12 col-lg-4 col-xl-4">    
+                        <div class="tip-head">
+                            <div class="tip-topimg"><img src="./img/work/02.png" alt="Tip number 2"></div>
+                            <div class="tip-title tip-title--size"><h4>Write & Understand</h4></div>
+                        </div>
+                        <div class="tip-text">Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</div>
+                        <div class="tip-img">
+                            <img src="./img/work/underst.png" alt="Understanding photo" class="tip-bigimg">
+                        </div>
+                    </div>
+                    <div class="tip-content tip-content--size2 col-sm-12 col-md-12 col-lg-4 col-xl-4">    
+                        <div class="tip-head">
+                            <div class="tip-topimg"><img src="./img/work/03.png" alt="Tip number 1"></div>
+                            <div class="tip-title"><h4>Alivio!</h4></div>
+                        </div>
+                        <div class="tip-text">Now you are aware, and have a way to manage and overcome your own stress. What are you waiting for? Alivio today!</div>
+                        <div class="tip-img">
+                            <img src="./img/work/alivio.png" alt="Understanding photo" class="tip-bigimg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,13 +125,13 @@
     <section id="review" class="review">
         <div class="container">
             <div class="about-fb row">
-                <div class="fb col-sm-12 col-mg-6 col-lg-6 col-xl-6">
+                <div class="fb-note col-sm-12 col-mg-12 col-lg-6 col-xl-6">
                     <h4 class="fb-title">Let's hear about Kayla's success story</h4>
                     <div class="fb-text">See how well Alivio works in a real customer's life. </div>
                     <a href="#" class="button">Let's get started</a>
                 </div>
-                <div class="fb-video col-sm-12 col-mg-6 col-lg-6 col-xl-6">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wtl5UrrgU8c" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="fb-video col-sm-12 col-mg-12 col-lg-6 col-xl-6 fb-video--size">
+                    <iframe class="video-item" src="https://www.youtube.com/embed/wtl5UrrgU8c" title="YouTube video player" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -83,24 +140,28 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content row">
-                <div class="about-img col-sm-12 col-mg-6 col-lg-6 col-xl-6">
-                    <div class="img-main"><img src="./img/About/Image.png" alt=""></div>
+                <div class="about-img col-sm-12 col-mg-12 col-lg-6 col-xl-6">
+                    <div class="img-main"><img src="./img/About/Image.png" alt="Photo"></div>
                     <div class="profile">
-                        <div class="profile-head">Customized For</div>
-                        <div class="profile-pic"><img src="./img/About/Image (1).png" alt="photo"></div>
-                        <div class="profile-name">Mikayla</div>
-                        <div class="profile-title">Your custom contents</div>
-                        <ul class="profile-list">
-                            <li class="list-item">Understand Your Stress</li>
-                            <li class="list-item">Anger Management</li>
-                        </ul>
+                        <div class="profile-intr">
+                            <h3 class="profile-head">Customized For</h3>
+                            <img src="./img/About/Image (1).png" alt="photo">
+                            <span class="profile-name">Mikayla</span>
+                        </div>
+                        <div class="profil">
+                            <h3 class="profil-title">Your custom contents</h3>
+                            <ul class="profil-list">
+                                <li class="list-item"><span class="profil-text">Understand Your Stress</span></li>
+                                <li class="list-item"><span class="profil-text">Anger Management</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="about-descr col-sm-12 col-mg-5 col-lg-5 col-xl-5 offset-1">
-                    <div class="descr-head">Our product</div>
-                    <div class="descr-title">You tell us your stress, We make your diary</div>
-                    <div class="descr-text">Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</div>
-                    <div class="descr-but"><a href="#" class="button">Find Your Way</a></div>
+                <div class="about-work col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <div class="work-head">Our product</div>
+                    <div class="work-title work-title--size">You tell us your stress, &nbsp;We make your&nbsp; diary</div>
+                    <div class="work-text">Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</div>
+                    <div class="work-but"><a href="#" class="button">Find Your Way</a></div>
                 </div>
             </div>
         </div>
@@ -113,10 +174,10 @@
                     <a class="logo-bot" href= "#">Alivio</a>
                 </div>
                 <div class="col-sm-12 col-mg-4 col-lg-4 col-xl-4">
-                    <span>2021 (c) Все права защищены. Alivio.com</span>
+                    <span class="footer-rights">2021 &copy; Все права защищены. Alivio.com</span>
                 </div>
                 <div class="col-sm-12 col-mg-4 col-lg-4 col-xl-4">
-                    <span>Разработано: Alivio.</span>
+                    <span class="footer-rights">Разработано: Alivio.</span>
                 </div>
             </div>
         </div>
@@ -127,4 +188,5 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/jquerry.js"></script>
 </html>
